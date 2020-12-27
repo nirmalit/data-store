@@ -34,6 +34,7 @@ function:
                   
 <--3-->[delete function],
     Parameter => key;
+                 
                  key   = key-value pair needed to deleted in the Data Store;
                  
    Return =>  1)If key is not in the Data Store,then "Key is not in the Data Store" will be returned.;
