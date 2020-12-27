@@ -10,7 +10,7 @@ NOTE:
 function:
 
 
-1--> create 
+<--1--> create 
      Parameter => key ,value,time(optinal);
                   key   = Key name in which the value is store;
                   value = Json object(which is stored under the key) ;
@@ -20,12 +20,12 @@ function:
     NOTE---> if time is specified then timeToKill function is invoked ;
              timeToKill will delete the key pair after specified time (with the help of deleteAfterExpire function);
              These process is done with the help of thread ;
-2-->read
+<--2-->read
     parameter =>  key;
                   key   = key to be searched in the Data Store;
     Return    =>  1)If key is not in the Data Store,then "Key is not in the Data Store" will be returned.;
                   2)If key is in the Data Store,then the Json Object(which is stored under the key) is returned as response.;
-3-->delete
+<--3-->delete
     Parameter => key;
                  key   = key-value pair needed to deleted in the Data Store;
     Return    =>  1)If key is not in the Data Store,then "Key is not in the Data Store" will be returned.;
