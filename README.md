@@ -2,11 +2,14 @@
 File based key-value data store.
 
 NOTE:
+
   1)"store.json" is a file used to store data.If you want to create this file in particular path then follow the next step.
   2)During instantiation of class if path specified then the "store.json" file is stored in that path. 
    ----The path must be raw string.Because the path contain backslash(it is consider as String Literal){ex : dataStore(r"<path_for_store.json_file>") }---- 
 
 function:
+
+
 1--> create 
      Parameter => key ,value,time(optinal)
                   key   = Key name in which the value is store
