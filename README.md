@@ -17,6 +17,7 @@ function:
                   time  = Integer(Time-to-live ,It is optinal.If specified ,then the key-value will be deleted after the given time)(In seconds);
      Return    => 1)if key is already in the data store, then "Key is already availabe in Data Store" is returned as response.;
                   2)if key is not in the data store,it will create a new key and add the value.Then ,return "Success, key-value pair are added to the Data Store" ;
+                  
     NOTE---> if time is specified then timeToKill function is invoked ;
              timeToKill will delete the key pair after specified time (with the help of deleteAfterExpire function);
              These process is done with the help of thread ;
