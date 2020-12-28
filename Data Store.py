@@ -66,5 +66,8 @@ class dataStore:
         timer = threading.Timer(times,self.deleteAfterExpire,args=(key,))
         timer.start()
 
-
-
+#---Example---
+#obj=dataStore()  --or--  obj=dataStore(<--file path for store.json-->) ex:obj=dataStore(r"G:\file\store") 
+#obj.create("one",jsonobj) --or--  #obj.create("one",jsonobj,4)  ---> jsonobj ex: {"name":"ram",.....} , 4-- key 'one' and its value available for 4 seconds
+#print(obj.read("one"))  -- jsonobj is get as a response
+#print(obj.delete("one")) -- remove key "one" and its value from data store 
